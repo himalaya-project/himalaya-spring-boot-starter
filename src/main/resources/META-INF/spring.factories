@@ -1,0 +1,4 @@
+# Auto Configure
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.pdomingo.starter.jackson.HimalayaJacksonAutoConfiguration,\
+com.pdomingo.starter.amqp.HimalayaAmqpAutoConfiguration
