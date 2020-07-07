@@ -1,10 +1,9 @@
 package com.pdomingo.starter.amqp;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.pdomingo.starter.amqp.service.AmqpRoutingConfiguration;
+import com.pdomingo.starter.amqp.service.EventMapper;
 import com.pdomingo.starter.amqp.service.EventService;
 import org.springframework.amqp.core.AmqpTemplate;
-import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
 import org.springframework.amqp.support.converter.MessageConverter;
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.autoconfigure.amqp.RabbitAutoConfiguration;
@@ -30,12 +29,12 @@ public class HimalayaAmqpAutoConfiguration {
             AmqpTemplate.class,
             AmqpRoutingConfiguration.class
     })
-    EventService eventService(AmqpTemplate amqpTemplate, AmqpRoutingConfiguration routingConfiguration) {
-        return new EventService(amqpTemplate, routingConfiguration);
+    EventService eventService(AmqpTemplate amqpTemplate, AmqpRoutingConfiguration routingConfiguration, EventMapper eventMapper) {
+        return new EventService(amqpTemplate, routingConfiguration, eventMapper);
     }
 
     @Bean
-    MessageConverter jacksonMessageConverter(ObjectMapper objectMapper) {
-        return new Jackson2JsonMessageConverter(objectMapper);
+    MessageConverter messageConverter() {
+        return new ProtobufMessageConverter();
     }
 }

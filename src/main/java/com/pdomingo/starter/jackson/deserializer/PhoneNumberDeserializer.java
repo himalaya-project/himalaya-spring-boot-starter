@@ -1,11 +1,9 @@
 package com.pdomingo.starter.jackson.deserializer;
 
 import com.fasterxml.jackson.core.JsonParser;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer;
-import com.pdoming.kernel.core.vobjects.Email;
-import com.pdoming.kernel.core.vobjects.PhoneNumber;
+import com.pdomingo.kernel.core.vobjects.PhoneNumber;
 
 import java.io.IOException;
 

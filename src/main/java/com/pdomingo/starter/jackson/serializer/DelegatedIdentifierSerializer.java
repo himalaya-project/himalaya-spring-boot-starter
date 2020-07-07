@@ -1,10 +1,9 @@
 package com.pdomingo.starter.jackson.serializer;
 
 import com.fasterxml.jackson.core.JsonGenerator;
-import com.fasterxml.jackson.databind.JsonSerializer;
 import com.fasterxml.jackson.databind.SerializerProvider;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;
-import com.pdoming.kernel.core.ddd.DelegatedIdentifier;
+import com.pdomingo.kernel.core.ddd.DelegatedIdentifier;
 
 import java.io.IOException;
 

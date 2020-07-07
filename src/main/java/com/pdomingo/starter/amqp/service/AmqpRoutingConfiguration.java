@@ -1,6 +1,6 @@
 package com.pdomingo.starter.amqp.service;
 
-import com.pdoming.kernel.core.ddd.DomainEvent;
+import com.pdomingo.kernel.core.ddd.DomainEvent;
 
 import java.util.HashMap;
 import java.util.Map;

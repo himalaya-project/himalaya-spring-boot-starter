@@ -1,9 +1,9 @@
 package com.pdomingo.starter.jackson.module;
 
 import com.fasterxml.jackson.databind.module.SimpleModule;
-import com.pdoming.kernel.core.vobjects.Address;
-import com.pdoming.kernel.core.vobjects.Email;
-import com.pdoming.kernel.core.vobjects.PhoneNumber;
+import com.pdomingo.kernel.core.vobjects.Address;
+import com.pdomingo.kernel.core.vobjects.Email;
+import com.pdomingo.kernel.core.vobjects.PhoneNumber;
 import com.pdomingo.starter.jackson.deserializer.AddressDeserializer;
 import com.pdomingo.starter.jackson.deserializer.EmailDeserializer;
 import com.pdomingo.starter.jackson.deserializer.PhoneNumberDeserializer;

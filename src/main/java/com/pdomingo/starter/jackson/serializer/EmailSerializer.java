@@ -3,7 +3,7 @@ package com.pdomingo.starter.jackson.serializer;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.SerializerProvider;
 import com.fasterxml.jackson.databind.ser.std.StdSerializer;
-import com.pdoming.kernel.core.vobjects.Email;
+import com.pdomingo.kernel.core.vobjects.Email;
 
 import java.io.IOException;
 
